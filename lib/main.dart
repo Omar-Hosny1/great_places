@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider.value(
       value: GreatPlaces(),
       child: MaterialApp(
-          title: 'Great Places',
-          theme: ThemeData(
-            primarySwatch: Colors.indigo,
-            accentColor: Colors.amber,
-          ),
-          home: PlacesListScreen(),
-          routes: {
-            AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
-          }),
+        title: 'Great Places',
+        theme: ThemeData(
+          primarySwatch: Colors.indigo,
+          accentColor: Colors.amber,
+        ),
+        home: PlacesListScreen(),
+        routes: {
+          AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
+        },
+      ),
     );
   }
 }
